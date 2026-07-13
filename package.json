@@ -1,0 +1,18 @@
+{
+  "name": "mastra-skill-xproc-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "mastra dev",
+    "worker": "node --env-file-if-exists=.env --import tsx src/mastra/worker.ts",
+    "repro": "node --env-file-if-exists=.env --import tsx repro.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.11",
+    "@mastra/core": "^1.50.1",
+    "@mastra/inngest": "^1.8.1",
+    "inngest": "^4.12.1",
+    "mastra": "^1.18.2",
+    "tsx": "^4.23.0"
+  }
+}
